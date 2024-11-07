@@ -2,130 +2,87 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Ecoworms</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoWorms</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <!-- Encabezado con el menú -->
     <nav class="topheader">
-      <a href="" class="logo">
-        <img height="70" width="70" src="LOGO VERDE ECOWORMS.png" alt="" />
+      <a href="#" class="logo">
+        <img src="LOGO VERDE ECOWORMS.png" alt="Logo de Ecoworms" />
       </a>
-      <ul class="menu-horizontal">
-        <li><a href="">Inicio</a></li>
-        <li>
-          <a href="">Proyectos</a>
-          <ul class="menu-vertical">
-            <li><a href="">Biodegradación</a></li>
-            <li><a href="">Educación Ambiental</a></li>
-            <li><a href="">Alianzas Estratégicas</a></li>
-          </ul>
-        </li>
-        <li><a href="">Agregar Proyecto</a></li>
+
+      <!-- Menú hamburguesa -->
+      <div class="menu-hamburger" id="menuHamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="menu-horizontal" id="menuHorizontal">
+        <li><a href="#Inicio">Inicio</a></li>
+        <li><a href="#Proyectos">Proyectos</a></li>
+        <li><a href="#">Agregar Proyecto</a></li>
         <li><a href="#Inscripcion">Contacto</a></li>
-        <li><a href="">Nosotros</a></li>
-        <li><a href="">Opiniones</a></li>
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Opiniones</a></li>
       </ul>
-      <ul class="boton_login-createaccount">
+
+      <ul class="boton_login-createaccount" id="loginButton">
         <li>
-          <a href="">
-            <img src="pngwing.com (2).png" alt="Icono" class="icono-cuenta" />
-            Mi Cuenta
+          <a href="#">
+            <img
+              src="pngwing.com (2).png"
+              alt="Icono de cuenta"
+              class="icono-cuenta"
+            />
+            Mi cuenta
           </a>
         </li>
       </ul>
     </nav>
 
-    <!-- Sección principal de contenido -->
-    <section class="ecoworms">
-      <div class="content-ecoworms">
-        <div class="text-video">
-          <h2>ECOWORMS</h2>
-          <div class="video-container">
-            <iframe
-              src="https://www.youtube.com/embed/wBrck1S2L6A"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </div>
-        <div class="ecoworms-info">
-          <h3>”Transformando residuos en futuro, un gusano a la vez”</h3>
-          <p>
-            En Ecoworms, utilizamos el poder de los gusanos para abordar uno de
-            los problemas más grandes del mundo: la contaminación plástica.
-            Nuestro enfoque innovador en la biodegradación de plásticos nos
-            permite convertir los desechos en recursos sostenibles,
-            contribuyendo a un futuro más verde.
-          </p>
-          <p>
-            Colaboramos con instituciones académicas y científicos de todo el
-            mundo para avanzar en la investigación sobre el uso de gusanos en la
-            descomposición de diferentes tipos de plásticos. Gracias a estas
-            alianzas, hemos logrado identificar especies de gusanos que aceleran
-            el proceso de biodegradación, ofreciendo una solución ecológica y
-            eficiente a la creciente crisis de los residuos plásticos. Además,
-            trabajamos con empresas y gobiernos para implementar estas
-            soluciones a gran escala.
-          </p>
-          <p>
-            A través de proyectos educativos y alianzas estratégicas, buscamos
-            inspirar a las nuevas generaciones y a las comunidades a
-            involucrarse en la protección del medio ambiente. Únete a nuestra
-            misión y juntos transformemos los residuos en recursos valiosos,
-            asegurando un planeta más limpio para las generaciones futuras.
-          </p>
-        </div>
+    <!-- Sección principal de bienvenida -->
+    <section class="intro" id="Inicio">
+      <img
+        src="Fondo_Inicio.png"
+        alt="Fondo de Inicio"
+        class="background-image"
+      />
+      <div class="intro-content">
+        <h1 class="intro-title">EcoWorms</h1>
+        <p class="intro-subtitle">
+          “Transformando residuos en futuro, un gusano a la vez”
+        </p>
+        <button class="create-button">Crear</button>
       </div>
+      <img
+        src="Inicio.png"
+        alt="Decoración de gusano y botella"
+        class="intro-image"
+      />
     </section>
 
-    <!-- Sección de inscripción -->
-    <section class="Incripcion-Section" id="Inscripcion">
-      <div class="Container-Section">
-        <form name="frm" method="post" action="">
-          <fieldset id="form">
-            <legend>Formulario de Inscripción</legend>
-            <ol>
-              <li>
-                <label>Nombres:</label>
-                <input type="text" name="fname" size="30" />
-              </li>
-              <li>
-                <label>Apellidos:</label>
-                <input type="text" name="flastname" size="30" />
-              </li>
-              <li>
-                <label>Dirección:</label>
-                <input type="text" name="fadress" size="30" />
-              </li>
-              <li>
-                <label>Teléfono:</label>
-                <input type="text" name="fphone" size="30" />
-              </li>
-              <li>
-                <label>Email:</label>
-                <input type="text" name="femail" size="30" />
-              </li>
-              <li>
-                <label>Sexo:</label>
-                <input type="radio" name="fsex" value="H" /> Hombre
-                <input type="radio" name="fsex" value="M" /> Mujer
-              </li>
-              <li>
-                <label>Elige tu carrera:</label>
-                <select name="career">
-                  <option>Ingeniería de Sistemas</option>
-                  <option>Ingeniería de Software</option>
-                  <option>Ciencias de la Computación</option>
-                  <option>Ciberseguridad</option>
-                </select>
-              </li>
-            </ol>
-            <p><input class="btn-frm-insc" type="submit" value="Enviar" /></p>
-          </fieldset>
-        </form>
+    <section class="projects-section" id="Proyectos">
+      <h2 class="projects-title">Proyectos</h2>
+      <p class="projects-subtitle">"Innovando hoy para un mañana más verde"</p>
+      <div class="projects-container">
+        <div class="card">
+          <img src="ruta-de-la-imagen1.jpg" alt="Proyecto 1" />
+          <h3>Biodegradación de plásticos con gusanos</h3>
+          <button class="btn-more">Ver más</button>
+        </div>
+        <div class="card">
+          <img src="ruta-de-la-imagen2.jpg" alt="Proyecto 2" />
+          <h3>Educación ambiental y sostenibilidad</h3>
+          <button class="btn-more">Ver más</button>
+        </div>
+        <div class="card">
+          <img src="ruta-de-la-imagen3.jpg" alt="Proyecto 3" />
+          <h3>Alianzas estratégicas y expansión</h3>
+          <button class="btn-more">Ver más</button>
+        </div>
       </div>
     </section>
 
@@ -142,9 +99,9 @@
         <div class="footer-column">
           <h3>Proyectos</h3>
           <ul>
-            <li><a href="#">Biodegradacion</a></li>
-            <li><a href="#">Educacion Ambiental</a></li>
-            <li><a href="#">Alianzas Estrategicas</a></li>
+            <li><a href="#">Biodegradación</a></li>
+            <li><a href="#">Educación Ambiental</a></li>
+            <li><a href="#">Alianzas Estratégicas</a></li>
             <li><a href="#">Futuros Proyectos</a></li>
           </ul>
         </div>
@@ -152,7 +109,7 @@
           <h3>Sedes</h3>
           <ul>
             <li><a href="#">San Miguel</a></li>
-            <li><a href="#">Jesus Maria</a></li>
+            <li><a href="#">Jesús María</a></li>
             <li><a href="#">Lince</a></li>
             <li><a href="#">La Molina</a></li>
           </ul>
@@ -171,5 +128,7 @@
         <p>ECOWORMS</p>
       </div>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>
+
