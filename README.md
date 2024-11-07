@@ -5,7 +5,12 @@ Landing Page de Ecoworms: https://xgwkmx.csb.app/
 - Proyecto y Autores:
 
 - Proyecto: EcoWorms, una startup biotecnológica que aborda la contaminación por plásticos mediante el uso de gusanos para la biodegradación de plásticos en colegios peruanos.
-  Miembros del equipo: Mathias Joaquin Aspajo Alvarez, Steven Jeampierre Marquez Rios, Kiara Marcela Reynaldo Zavaleta, Stephano Fabian Rojas Huaman, David Fernando Yzaguirre Gutierrez.
+  Miembros del equipo: 
+  Mathias Joaquin Aspajo Alvarez, 
+  Steven Jeampierre Marquez Rios, 
+  Kiara Marcela Reynaldo Zavaleta, 
+  Stephano Fabian Rojas Huaman, 
+  David Fernando Yzaguirre Gutierrez.
 
 - Segmentos Objetivo:
 - Estudiantes de primaria y secundaria:
