@@ -14,7 +14,7 @@
       </a>
 
       <!-- Menú hamburguesa -->
-      <div class="menu-hamburger" id="menuHamburger">
+      <div class="menu-hamburguesita" id="menuHamburguesita">
         <span></span>
         <span></span>
         <span></span>
@@ -22,10 +22,17 @@
 
       <ul class="menu-horizontal" id="menuHorizontal">
         <li><a href="#Inicio">Inicio</a></li>
-        <li><a href="#Proyectos">Proyectos</a></li>
-        <li><a href="#">Agregar Proyecto</a></li>
-        <li><a href="#Inscripcion">Contacto</a></li>
-        <li><a href="#">Nosotros</a></li>
+        <li class="menu-item">
+          <a href="#Proyectos">Proyectos</a>
+          <ul class="menu-vertical">
+            <li><a href="#">Plásticos con gusanos</a></li>
+            <li><a href="#">Ambiental y sostenibilidad</a></li>
+            <li><a href="#">Alianzas estratégicas</a></li>
+          </ul>
+        </li>
+        <li><a href="#AgregarProyecto">Agregar Proyecto</a></li>
+        <li><a href="#Contactanos">Contacto</a></li>
+        <li><a href="#QuienesSomos">Nosotros</a></li>
         <li><a href="#">Opiniones</a></li>
       </ul>
 
@@ -58,31 +65,217 @@
         <button class="create-button">Crear</button>
       </div>
       <img
-        src="Inicio.png"
+        src="Inicio1.png"
         alt="Decoración de gusano y botella"
         class="intro-image"
       />
     </section>
 
+    <!-- Proyectos -->
     <section class="projects-section" id="Proyectos">
       <h2 class="projects-title">Proyectos</h2>
       <p class="projects-subtitle">"Innovando hoy para un mañana más verde"</p>
       <div class="projects-container">
         <div class="card">
-          <img src="ruta-de-la-imagen1.jpg" alt="Proyecto 1" />
+          <img src="Presentacion_1.png" alt="Proyecto 1" />
           <h3>Biodegradación de plásticos con gusanos</h3>
           <button class="btn-more">Ver más</button>
         </div>
         <div class="card">
-          <img src="ruta-de-la-imagen2.jpg" alt="Proyecto 2" />
+          <img src="Presentacion_2.png" alt="Proyecto 2" />
           <h3>Educación ambiental y sostenibilidad</h3>
           <button class="btn-more">Ver más</button>
         </div>
         <div class="card">
-          <img src="ruta-de-la-imagen3.jpg" alt="Proyecto 3" />
+          <img src="Presentacion_3.png" alt="Proyecto 3" />
           <h3>Alianzas estratégicas y expansión</h3>
           <button class="btn-more">Ver más</button>
         </div>
+      </div>
+    </section>
+
+    <!-- Agregar Proyecto -->
+    <section class="add-project-section" id="AgregarProyecto">
+      <h2 class="add-project-title">Agregar Proyecto</h2>
+      <p class="add-project-subtitle">
+        “¡Únete a nosotros y comparte tu idea para transformar el mundo!”
+      </p>
+      <form class="add-project-form">
+        <div class="form-group">
+          <label for="project-name">Nombre del Proyecto</label>
+          <input
+            type="text"
+            id="project-name"
+            name="project-name"
+            placeholder="Nombre del proyecto"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="description">Descripción</label>
+          <textarea
+            id="description"
+            name="description"
+            placeholder="Describe tu proyecto aquí"
+            rows="4"
+            required
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <label for="category">Categoría</label>
+          <select id="category" name="category" required>
+            <option value="">Selecciona una categoría</option>
+            <option value="biodegradación">Biodegradación</option>
+            <option value="educación">Educación Ambiental</option>
+            <option value="expansión">Alianzas Estratégicas</option>
+            <option value="otros">Otros</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="contact-email">Correo de Contacto</label>
+          <input
+            type="email"
+            id="contact-email"
+            name="contact-email"
+            placeholder="Correo electrónico"
+            required
+          />
+        </div>
+        <button type="submit" class="submit-button">Enviar Proyecto</button>
+      </form>
+    </section>
+
+    <!-- Contacto -->
+    <section class="contact-section" id="Contactanos">
+      <h2 class="contact-title">Contáctanos</h2>
+      <p class="contact-subtitle">
+        “Conecta con nosotros y juntos aceleremos la transformación sostenible.”
+      </p>
+      <div class="contact-container">
+        <div class="social-column">
+          <div class="social-item">
+            <img src="Youtube_logo.png" alt="YouTube" class="social-icon" />
+            <p>@Eco_Worms01</p>
+          </div>
+          <div class="social-item">
+            <img src="Facebook_logo.png" alt="Facebook" class="social-icon" />
+            <p>@EcoWorms1</p>
+          </div>
+          <div class="social-item">
+            <img src="WhatApp_logo.png" alt="WhatsApp" class="social-icon" />
+            <p>+51 912 321 902</p>
+          </div>
+        </div>
+        <div class="central-image">
+          <img
+            src="Contacto_logo.png"
+            alt="Central Contact Image"
+            class="contact-image"
+          />
+        </div>
+        <div class="social-column">
+          <div class="social-item">
+            <img src="Tiktok_logo.png" alt="TikTok" class="social-icon" />
+            <p>@Ecoworms_12</p>
+          </div>
+          <div class="social-item">
+            <img src="Telegram_logo.png" alt="Telegram" class="social-icon" />
+            <p>+51 912 321 902</p>
+          </div>
+          <div class="social-item">
+            <img src="Instagram_png.png" alt="Instagram" class="social-icon" />
+            <p>@Ec0_W0rms</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre Nosotros -->
+    <section class="about-section" id="QuienesSomos">
+      <h2 class="about-title">Quiénes somos</h2>
+      <p class="about-description">
+        En EcoWorms, somos una startup biotecnológica comprometida con la
+        sostenibilidad y la preservación del medio ambiente. Nuestro enfoque
+        innovador utiliza gusanos de cera para descomponer plásticos,
+        transformándolos en materiales biodegradables.
+      </p>
+
+      <div class="about-container">
+        <div class="about-block">
+          <div class="about-text">
+            <h3 class="about-subtitle">Misión</h3>
+            <p class="about-paragraph">
+              Nuestra misión es liderar el cambio hacia una gestión responsable
+              de los residuos plásticos, combinando biotecnología y educación
+              para formar generaciones comprometidas con el cuidado del planeta.
+            </p>
+          </div>
+          <div class="about-image">
+            <img src="Somos_1.png" alt="Imagen de Misión" />
+          </div>
+        </div>
+
+        <div class="about-block">
+          <div class="about-image">
+            <img src="Somos_2.png" alt="Imagen de Visión" />
+          </div>
+          <div class="about-text">
+            <h3 class="about-subtitle">Visión</h3>
+            <p class="about-paragraph">
+              Visualizamos un mundo en el que la gestión de residuos plásticos
+              esté integrada en cada aspecto de la vida cotidiana, con EcoWorms
+              a la vanguardia de este cambio, tanto en el Perú como en el resto
+              del mundo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials-section">
+      <h2 class="testimonials-title">Clientes satisfechos</h2>
+      <p class="testimonials-subtitle">
+        “Innovación sostenible, resultados que hablan por sí mismos”
+      </p>
+      <div class="testimonials-container">
+        <div class="testimonial-card">
+          <h3>“Steven Marquez”</h3>
+          <p>
+            La mejor opción para reducir el impacto ambiental en mi colegio.
+          </p>
+        </div>
+        <div class="testimonial-card">
+          <h3>“Kiara Reynaldo”</h3>
+          <p>
+            Una idea genial para involucrar a los estudiantes en la
+            sostenibilidad.
+          </p>
+        </div>
+        <div class="testimonial-card">
+          <h3>“Stephano Rojas”</h3>
+          <p>La biodegradación con gusanos es simplemente revolucionaria.</p>
+        </div>
+        <div class="testimonial-card">
+          <h3>“David Yzaguirre”</h3>
+          <p>Una inversión económica que además cuida el medio ambiente.</p>
+        </div>
+        <div class="testimonial-card">
+          <h3>“Juan Carlos Morales”</h3>
+          <p>Increíble cómo algo tan simple puede generar un gran impacto.</p>
+        </div>
+        <div class="testimonial-card">
+          <h3>“Mathias Aspajo”</h3>
+          <p>Nuestros proyectos escolares nunca habían sido tan innovadores.</p>
+        </div>
+      </div>
+      <div class="pagination">
+        <span class="page-link">Anterior</span>
+        <span class="page-link">2</span>
+        <span class="page-link">3</span>
+        <span class="page-link">...</span>
+        <span class="page-link">67</span>
+        <span class="page-link">68</span>
+        <span class="page-link">Siguiente</span>
       </div>
     </section>
 
@@ -131,4 +324,3 @@
     <script src="main.js"></script>
   </body>
 </html>
-
