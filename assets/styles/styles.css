@@ -394,7 +394,7 @@ body {
   }
 
 .intro {
-  padding: 100px 20px;
+  padding: 40px 20px;
   background-image: url("assets/images/Fondo_Inicio.png"); 
   background-size: cover;
   background-position: center;
@@ -405,6 +405,7 @@ body {
   align-items: center;
   justify-content: center; 
 }
+
 
 
   .intro-content {
