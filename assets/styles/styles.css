@@ -393,20 +393,19 @@ body {
     color: #333;
   }
 
-.intro {
-  padding: 40px 20px;
-  background-image: url("assets/images/Fondo_Inicio.png"); 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100vh; 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; 
-}
-
-
+  .intro {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    min-height: 93vh;
+    overflow: hidden;
+  }
 
   .intro-content {
     max-width: 90%;
