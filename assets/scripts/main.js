@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // Código del menú hamburguesa
   const menuHamburguesita = document.getElementById("menuHamburguesita");
   const menuHorizontal = document.getElementById("menuHorizontal");
   const loginButton = document.getElementById("loginButton");
@@ -26,9 +27,8 @@ document.addEventListener("DOMContentLoaded", () => {
       toggleMenu("remove");
     }
   });
-});
 
-document.addEventListener("DOMContentLoaded", () => {
+  // Código del modal de autenticación
   const openLoginForm = document.querySelector("#loginButton a");
   const closeModal = document.getElementById("closeModal");
   const authModal = document.getElementById("authModal");
@@ -55,12 +55,13 @@ document.addEventListener("DOMContentLoaded", () => {
       alert("Por favor, completa ambos campos.");
     }
   });
-});
 
-document
-  .querySelector(".create-button a")
-  .addEventListener("click", (event) => {
-    event.preventDefault();
-    const targetSection = document.querySelector("#AgregarProyecto");
-    targetSection.scrollIntoView({ behavior: "smooth" });
-  });
+  // Código del scroll suave
+  document
+    .querySelector(".create-button a")
+    .addEventListener("click", (event) => {
+      event.preventDefault();
+      const targetSection = document.querySelector("#AgregarProyecto");
+      targetSection.scrollIntoView({ behavior: "smooth" });
+    });
+});
