@@ -35,18 +35,16 @@ document.addEventListener("DOMContentLoaded", () => {
   const loginForm = document.getElementById("loginForm");
 
   openLoginForm.addEventListener("click", (e) => {
-    e.preventDefault(); 
-    authModal.classList.remove("hidden"); 
+    e.preventDefault();
+    authModal.classList.remove("hidden");
   });
-
 
   closeModal.addEventListener("click", () => {
     authModal.classList.add("hidden");
   });
 
-
   loginForm.addEventListener("submit", (e) => {
-    e.preventDefault(); 
+    e.preventDefault();
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
 
@@ -58,3 +56,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+document
+  .querySelector(".create-button a")
+  .addEventListener("click", (event) => {
+    event.preventDefault();
+    const targetSection = document.querySelector("#AgregarProyecto");
+    targetSection.scrollIntoView({ behavior: "smooth" });
+  });
